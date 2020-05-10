@@ -6,14 +6,24 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CarteraPageModule } from './pages/cartera/cartera.module';
+import { AppComponent } from './app.component';
+import { MenuComponent } from 'src/app/menu/menu.component';
+import { Menu2Component } from 'src/app/menu2/menu2.component';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    Menu2Component
+  ],
+  exports: [
+    MenuComponent,
+    Menu2Component
+  ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CarteraPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

@@ -1,0 +1,43 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-conductores"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios">
+  <ion-card>
+    <img src="../../assets/img/avatar1.PNG">
+    <ion-card-header>
+      <ion-card-subtitle>Telefono: 665 576 446</ion-card-subtitle>
+      <ion-card-title>Javier Martinez Lopez</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-card-subtitle>Modelo</ion-card-subtitle>
+      Toyota Auris del 2015 descapotable.
+      <ion-card-subtitle>Matricula: 2367FLU</ion-card-subtitle>
+      
+      <ion-card-subtitle>Horario</ion-card-subtitle>
+      Tengo un horario de 8:30 a 2:30 los Martes y Viernes mientras que los Lunes y Jueves de 10:30 a 13:30.
+      
+      <ion-card-subtitle>Disponibilidad</ion-card-subtitle>
+      Plazas disponibles actualmente: 2
+
+      <ion-card-title>Precio: 4,00€/dia</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-label position="floating">Pulsa aqui para enviar un mensaje</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <div>
+    <ion-button (click)="presentAlert()" mode="ios" expand="block">Enviar mensaje</ion-button>
+  </div>
+  <div>
+    <ion-button (click)="presentAlert2()" mode="ios" expand="block">RESERVAR</ion-button>
+  </div>
+  
+    
+</ion-content>

@@ -1,0 +1,192 @@
+
+<ion-header mode="ios">
+  
+  <ion-toolbar mode="ios">
+  <ion-buttons slot="start">
+    <ion-menu-button color="primary" menu="primerMenu"></ion-menu-button>
+  </ion-buttons>
+  <img width="80" height="80" src="../../assets/img/Logo.JPG">
+</ion-toolbar>
+
+</ion-header>
+
+
+<ion-content id="main">
+<ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content
+    pullingIcon="chevron-down-circle-outline"
+    pullingText="Pull to refresh"
+    refreshingSpinner="circles"
+    refreshingText="Refreshing...">
+  </ion-refresher-content>
+</ion-refresher>
+<ion-list inset="true" mode="ios" lines="inset">
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar2.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Javier Martinez Lopez</ion-card-subtitle>
+          <ion-card-title>Toyota Auris</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 4,00€/dia y negociable.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar3.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Francisco Fernandez Olmo</ion-card-subtitle>
+          <ion-card-title>Seat Ibiza</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 2,50€/dia.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar4.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Manuel Hernan Lopez</ion-card-subtitle>
+          <ion-card-title>Opel Corsa</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 3,00€/dia.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar1.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Javier Sanz Rubio</ion-card-subtitle>
+          <ion-card-title>Audi A3</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 3,00€/dia y negociable.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar5.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Jose Loens Rodriguez</ion-card-subtitle>
+          <ion-card-title>Audi Q5</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 4,50€/dia y negociable.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar6.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Mario Fernandez Vazquez</ion-card-subtitle>
+          <ion-card-title>Seat Leon</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 2,50€/dia.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar7.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Cristian Garcia Lopez</ion-card-subtitle>
+          <ion-card-title>Kia Carnival</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 2,50€/dia y negociable.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar8.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Mauricio Colmenero Ayuso</ion-card-subtitle>
+          <ion-card-title>Ford Fiesta</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 1,50€/dia.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="/opcion-conductor">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/avatar6.PNG">
+      </ion-avatar>
+      <div>
+        <ion-card-header>
+          <ion-card-subtitle>Alejandro Perez Martinez</ion-card-subtitle>
+          <ion-card-title>Ferrari F5</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Precio inicial de 7,00€/dia.
+        </ion-card-content>
+      </div>
+    </ion-item>
+  </ion-card>
+</ion-list>
+
+
+
+<ion-button href="/mapa" mode="ios" expand="block">Volver atras</ion-button>
+
+
+</ion-content> 

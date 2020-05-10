@@ -1,0 +1,28 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-pasajeros"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Javier Martinez Lopez</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Hola buenas, estaria interesado en la plaza disponible para ir a la uni durante todo el mes,
+            Un saludo.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Responder</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <div>
+      <ion-button (click)="presentAlert()" mode="ios" expand="block">OK</ion-button>
+    </div>
+  </ion-card>
+</ion-content>

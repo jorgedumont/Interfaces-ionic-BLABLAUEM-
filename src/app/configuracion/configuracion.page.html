@@ -1,0 +1,34 @@
+<ion-header mode="ios"> 
+  <ion-toolbar mode="ios">
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-conductores"></ion-back-button>
+    </ion-buttons>
+    <ion-label class="titulo">Configuracion</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-list mode="ios">
+    <ion-item>
+      <ion-label>Notificaciones</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item href="/cambiar-password">
+      Cambiar contraseña
+    </ion-item>
+    <ion-item>
+      <div>
+        <ion-label>Compartir informacion</ion-label>
+        <p>Gracias a esta opcion sera mas facil mejorar la aplicacion para los desarrolladores</p>
+
+      </div>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Version 0.1.4</ion-label>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
