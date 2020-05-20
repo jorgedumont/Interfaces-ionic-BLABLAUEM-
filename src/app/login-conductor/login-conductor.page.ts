@@ -20,7 +20,7 @@ export class LoginConductorPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("mapa");
+            this.router.navigateByUrl("tabs2");
           }
         }
       ]

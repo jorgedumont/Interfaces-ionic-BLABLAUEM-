@@ -31,10 +31,6 @@ const routes: Routes = [
     loadChildren: () => import('./cambiar-password/cambiar-password.module').then( m => m.CambiarPasswordPageModule)
   },
   {
-    path: 'mapa',
-    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
@@ -94,6 +90,30 @@ const routes: Routes = [
   {
     path: 'nuevocoche',
     loadChildren: () => import('./nuevocoche/nuevocoche.module').then( m => m.NuevocochePageModule)
+  },
+  {
+    path: 'perfil-conductor',
+    loadChildren: () => import('./perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
+  },
+  {
+    path: 'viajes-conductor',
+    loadChildren: () => import('./viajes-conductor/viajes-conductor.module').then( m => m.ViajesConductorPageModule)
+  },
+  {
+    path: 'tabs1',
+    loadChildren: () => import('./tabsPasajero/tabsPasajero.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'tabs2',
+    loadChildren: () => import('./tabsConductor/tabsConductor.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'configuracionconductor',
+    loadChildren: () => import('./configuracionconductor/configuracionconductor.module').then( m => m.ConfiguracionconductorPageModule)
+  },
+  {
+    path: 'cambiar-password-conductor',
+    loadChildren: () => import('./cambiar-password-conductor/cambiar-password-conductor.module').then( m => m.CambiarPasswordConductorPageModule)
   }
 ];
 @NgModule({
