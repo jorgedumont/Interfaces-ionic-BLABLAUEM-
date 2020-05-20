@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tabHomePasajero.page';
 
 import { Tab2PageRoutingModule } from './tabHomePasajero-routing.module';
+import { Geolocation } from "@ionic-native/geolocation/ngx";
 
 @NgModule({
   imports: [
@@ -13,6 +14,9 @@ import { Tab2PageRoutingModule } from './tabHomePasajero-routing.module';
     CommonModule,
     FormsModule,
     Tab2PageRoutingModule
+  ],
+  providers: [
+    Geolocation
   ],
   declarations: [Tab2Page]
 })

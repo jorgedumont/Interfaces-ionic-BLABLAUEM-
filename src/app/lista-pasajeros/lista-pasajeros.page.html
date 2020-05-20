@@ -10,6 +10,14 @@
 </ion-header>
 
 <ion-content mode="ios">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
   <ion-list>
     <ion-card>
       <ion-item href="/chat-pasajero">
@@ -64,6 +72,6 @@
     </ion-card>
     
   </ion-list>
-  <ion-button color="danger" href="tabs2" mode="ios" expand="block">Volver atras</ion-button>
+  
 
 </ion-content>
