@@ -3,6 +3,7 @@
     <ion-title>
       Mi Mapa
     </ion-title>
+    <img width="70" height="70" src="../../assets/img/Logo.JPG" slot="end">
   </ion-toolbar>
 
   <link href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" rel="stylesheet">
@@ -13,7 +14,7 @@
   <br>
   <ion-buttons>
     
-    <ion-button href="/lista-pasajeros" slot="end">
+    <ion-button (click)="presentAlert()" slot="end">
       Lista de Pasajeros
     </ion-button>
 

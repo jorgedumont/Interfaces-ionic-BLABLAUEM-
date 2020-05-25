@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./chat-pasajero/chat-pasajero.module').then( m => m.ChatPasajeroPageModule)
   },
   {
+    path: 'chat-pasajero1',
+    loadChildren: () => import('./chat-pasajero1/chat-pasajero1.module').then( m => m.ChatPasajero1PageModule)
+  },
+  {
     path: 'perfil-pasajero',
     loadChildren: () => import('./perfil-pasajero/perfil-pasajero.module').then( m => m.PerfilPasajeroPageModule)
   },
@@ -114,6 +118,30 @@ const routes: Routes = [
   {
     path: 'cambiar-password-conductor',
     loadChildren: () => import('./cambiar-password-conductor/cambiar-password-conductor.module').then( m => m.CambiarPasswordConductorPageModule)
+  },
+  {
+    path: 'homeconductor',
+    loadChildren: () => import('./homeconductor/homeconductor.module').then( m => m.HomeconductorPageModule)
+  },
+  {
+    path: 'homepasajero',
+    loadChildren: () => import('./homepasajero/homepasajero.module').then( m => m.HomepasajeroPageModule)
+  },
+  {
+    path: 'reservapasajero',
+    loadChildren: () => import('./reservapasajero/reservapasajero.module').then( m => m.ReservapasajeroPageModule)
+  },
+  {
+    path: 'listareservas',
+    loadChildren: () => import('./listareservas/listareservas.module').then( m => m.ListareservasPageModule)
+  },
+  {
+    path: 'editarperfil',
+    loadChildren: () => import('./editarperfil/editarperfil.module').then( m => m.EditarperfilPageModule)
+  },
+  {
+    path: 'editarperfilconductor',
+    loadChildren: () => import('./editarperfilconductor/editarperfilconductor.module').then( m => m.EditarperfilconductorPageModule)
   }
 ];
 @NgModule({

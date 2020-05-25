@@ -20,7 +20,7 @@ export class NuevatarjetaPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("metodopago");
+            
           }
         }
       ]

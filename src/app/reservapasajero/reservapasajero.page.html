@@ -1,0 +1,24 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-pasajeros"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Javier Lopez</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Hola buenas, me gustaria poder hacer una reserva el dia 03/06/2020 a las 10:30
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <div>
+      <ion-button (click)="presentAlert()" mode="ios" expand="block">Aceptar Reserva</ion-button>
+      <ion-button (click)="presentAlert2()" mode="ios" expand="block">Cancelar Reserva</ion-button>
+    </div>
+  </ion-card>
+</ion-content>

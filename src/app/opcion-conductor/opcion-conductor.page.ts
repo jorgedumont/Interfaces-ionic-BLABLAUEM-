@@ -20,7 +20,7 @@ export class OpcionConductorPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("lista-conductores");/*  */
+            
           }
         }
       ]
@@ -40,7 +40,7 @@ export class OpcionConductorPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("lista-conductores");/*  */
+            
           }
         }
       ]

@@ -20,7 +20,7 @@ export class NuevocochePage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("listacoches");
+            
           }
         }
       ]

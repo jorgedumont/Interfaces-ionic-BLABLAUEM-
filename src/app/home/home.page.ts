@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class HomePage {
 
   constructor(public alertController: AlertController,private router: Router) {}
-
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alerta',

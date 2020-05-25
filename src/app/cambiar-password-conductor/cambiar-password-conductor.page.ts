@@ -21,7 +21,7 @@ export class CambiarPasswordConductorPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("configuracionconductor");
+            
           }
         }
       ]

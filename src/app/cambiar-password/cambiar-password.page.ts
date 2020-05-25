@@ -20,7 +20,7 @@ export class CambiarPasswordPage{
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("configuracion");/*  */
+            
           }
         }
       ]

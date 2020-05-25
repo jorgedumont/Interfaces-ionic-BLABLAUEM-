@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Map, tileLayer, marker, circle, icon} from "leaflet";
+import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 
@@ -22,7 +24,7 @@ export class Tab2Page {
     shadowSize: [41, 41]
   });
 
-  constructor() {}
+  constructor(public alertController: AlertController,private router: Router) {}
 
   ionViewDidEnter(){
     this.showMap();
@@ -44,5 +46,25 @@ export class Tab2Page {
   this.marker = marker([40.410215, -3.708794], {icon: this.greenIcon}).addTo(this.map);
 
   }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Alerta',
+      message: 'En la siguiente pantalla puedes deslizar lateralmente para acceder a Mensajes/Reservas',
+      buttons: [
+        {
+          text: 'De acuerdo',
+          handler: () => {
+            console.log();
+            this.router.navigateByUrl("/lista-pasajeros");
+          }
+        }
+      ]
+
+    });
+
+    await alert.present();
+  }
+
 
 }

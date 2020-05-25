@@ -21,7 +21,7 @@ export class RegistroPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("login");
+            this.router.navigateByUrl("tabs1");
           }
         }, {
           text: 'Cancelar',

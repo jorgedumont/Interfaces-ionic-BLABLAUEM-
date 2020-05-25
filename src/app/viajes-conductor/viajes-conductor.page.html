@@ -1,59 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <ion-app>
-    <ion-header translucent>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Card</title>
-      <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
-      <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
-      <style>
-        :root {
-          --ion-safe-area-top: 20px;
-          --ion-safe-area-bottom: 22px;
-        }
-      </style>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-back-button defaultHref="tabs2/tab3"></ion-back-button>
-        </ion-buttons>
-        <ion-title>Card</ion-title>
-      </ion-toolbar>
-    </ion-header>,
-    <ion-content fullscreen>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Conductor:Yo</ion-card-subtitle>
-          <ion-card-title>Viaje Universidad</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Precio:+3,80 <ion-icon name="logo-euro"></ion-icon>
-        </ion-card-content>
-      </ion-card>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Conductor:Yo</ion-card-subtitle>
-          <ion-card-title>Viaje Universidad</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Precio:+4,10 <ion-icon name="logo-euro"></ion-icon>
-        </ion-card-content>
-    </ion-card>
+
+<ion-header translucent>
+  <title>
+    Card
+  </title>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs2/tab3"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="chevron-down-circle-outline"
+        pullingText="Pull to refresh"
+        refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
+    <br><br>
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Conductor:Yo</ion-card-subtitle>
+        <ion-card-subtitle>Conductor:YO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PENDIENTE</ion-card-subtitle>
+        <ion-card-subtitle>Hora:08:30</ion-card-subtitle>
+        <ion-card-subtitle>Fecha:27/05/2020</ion-card-subtitle>
+        <ion-card-subtitle>Tiempo hasta trayecto:49h23m4s</ion-card-subtitle>
+        <ion-card-subtitle>Pasajeros:Daniel Martinez, German Rodriguez</ion-card-subtitle>
         <ion-card-title>Viaje Universidad</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Precio:+4,10 <ion-icon name="logo-euro"></ion-icon>
+        Precio:+3,80 <ion-icon name="logo-euro"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+    <ion-button (click)="presentAlert()" mode="ios" expand="block">Cancelar</ion-button>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Conductor:YO</ion-card-subtitle>
+        <ion-card-title>Viaje Universidad</ion-card-title>
+        <ion-card-subtitle>Hora:10:30</ion-card-subtitle>
+        <ion-card-subtitle>Fecha:17/03/2020</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Precio:+4,80 <ion-icon name="logo-euro"></ion-icon>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Conductor:YO</ion-card-subtitle>
+        <ion-card-title>Viaje Universidad</ion-card-title>
+        <ion-card-subtitle>Hora:12:00</ion-card-subtitle>
+        <ion-card-subtitle>Fecha:21/05/2020</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Precio:+3,20 <ion-icon name="logo-euro"></ion-icon>
       </ion-card-content>
     </ion-card>
     <ion-item >
       <ion-icon name="cash-outline"></ion-icon>
       &nbsp;
-      Total Ingresado: 12,00
+      Total Ingresado: 8,00
     </ion-item>
-    </ion-content>
-  </ion-app>
-</html>
+  </ion-list>
+  
+</ion-content>

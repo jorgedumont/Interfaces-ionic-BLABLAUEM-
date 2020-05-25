@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">a
+<ion-app>
+<ion-header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style>
+</ion-header>
+
+<ion-content>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Editar Perfil Conductor</ion-title>
+      <ion-back-button defaultHref="tabs2/tab1" slot="start"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+            <ion-label position="floating">Nuevo Nombre</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Nuevo Apellidos</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="floating">Nuevo Telefono</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Nuevo Email</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Nueva Direccion</ion-label>
+            <ion-input placeholder="Calle"></ion-input>
+            <ion-input placeholder="Numero"></ion-input>
+            <ion-input placeholder="Codigo Postal"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin" (click)="presentAlert()">Aceptar</ion-button>
+        </div>
+      </ion-content>
+  </ion-app>
+

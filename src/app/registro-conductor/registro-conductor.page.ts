@@ -20,7 +20,7 @@ export class RegistroConductorPage {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("login-conductor");
+            this.router.navigateByUrl("tabs2");
           }
         }, {
           text: 'Cancelar',

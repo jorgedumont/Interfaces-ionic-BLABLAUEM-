@@ -14,13 +14,13 @@ export class ChatPasajeroPage{
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alerta',
-      message: 'Enviado correctamente',
+      message: 'Mensaje enviado correctamente',
       buttons: [
         {
           text: 'De acuerdo',
           handler: () => {
             console.log();
-            this.router.navigateByUrl("lista-pasajeros");/*  */
+            
           }
         }
       ]
